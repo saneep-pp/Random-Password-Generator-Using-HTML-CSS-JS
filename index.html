@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+   
+ <script src="https://kit.fontawesome.com/ebb335c6c8.js" crossorigin="anonymous"></script>
+<script>var video = document.getElementById("myVideo");
+
+    
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        
+      } else {
+        video.pause();
+        
+      }
+    }</script>
 </head>
 <body>
-    <h1>Random Password Generator</h1>
-    <div class="container">
+    <video autoplay muted loop id="myVideo">
+        <source src="animnumberletter.mp4" type="video/mp4">
+      </video>
+      <div class="main content">
+    <h1 >Random Password Generator</h1>
+    <div class="container content">
         <div class="input-container">
             <input type="text" placeholder="@deve\@Perp@n!" disabled>
             <i class="fa-solid fa-clipboard"></i>
@@ -16,7 +36,9 @@
             <input type="range" min="8" max="16">
             <span>8</span>
         </div>
-        <button class="GenerateBtn">Generate</button>
+        <button class="generateBtn" onclick="myFunction()">Generate</button>
     </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
